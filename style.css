@@ -1,0 +1,62 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    color: #483c8a;
+}
+h4 {
+    color: black;
+}
+ol {
+    list-style-type: upper-roman;
+}
+ol.decemical {
+    list-style-type: decimal;
+}
+ol.lower-alpa {
+    list-style-type: lower-alpha;
+}
+li::marker {
+    font-weight: bold;
+    color: black;
+}
+
+body{
+    width:80%;
+    margin: 3em auto;
+    
+  }
+  .Animation-progress {
+    box-shadow: none;
+    position: relative;
+    display: block;
+    width: 100%;
+    height: .25rem;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    background-color: #eee;
+  }
+  .Animation-progress .webcoderskull {
+     background-color: #455efc;
+  }
+  .Animation-progress .webcoderskull:after {
+    content: "";
+    position: absolute;
+    background-color: inherit;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    will-change: left,right;
+    animation: indeterminate 2.1s cubic-bezier(.165,.84,.44,1) infinite;
+    animation-delay: 1.15s;
+  }
+  .Animation-progress .webcoderskull:before {
+    content: "";
+    position: absolute;
+    background-color: inherit;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    will-change: left,right;
+    animation: indeterminate 2.1s cubic-bezier(.65,.815,.735,.395) infinite;
+  }
+  @keyframes indeterminate{0%{left:-35%;right:100%}60%{left:100%;right:-90%}100%{left:100%;right:-90%}}
